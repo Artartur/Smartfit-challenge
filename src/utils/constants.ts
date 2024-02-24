@@ -6,14 +6,18 @@ export enum Footer {
 }
 
 export enum Form {
-  TIME = 'horário',
-  MSG_TRAINGING_PERIOD = 'Qual período quer treinar?',
-  MORNING_PERIOD = 'Manhã 06:00 às 12:00',
-  AFTERNOON_PERIOD = 'Tarde 12:01 às 18:00',
-  NIGHT_PERIOD = 'Noite 18:01 às 23:00',
+  AFTERNOON = 'Tarde',
+  AFTERNOON_PERIOD = '12:01 às 18:00',
+  CLEAR = 'Limpar',
   CLOSED_UNITS = 'Exibir unidades fechadas',
   FIND_UNITS = 'Encontrar unidade',
-  CLEAR = 'Limpar',
+  FOUND_UNITS = 'Resultados encontrados:',
+  MORNING = 'Manhã',
+  MORNING_PERIOD = '06:00 às 12:00',
+  MSG_TRAINGING_PERIOD = 'Qual período quer treinar?',
+  NIGHT = 'Noite',
+  NIGHT_PERIOD = '18:01 às 23:00',
+  TIME = 'Horário',
 }
 
 export enum Header {
@@ -22,13 +26,13 @@ export enum Header {
 }
 
 export enum Legend {
-  MASK = `Máscara`,
-  TOWEL = 'Toalha',
+  CLOSED = 'Fechado',
+  FORBIDDEN = 'Proibido',
   FOUNTAIN = 'Bebedouro',
   LOCKERROOM = 'Vestiários',
-  REQUIRED = 'Obrigatório',
-  RECOMMENDED = 'Recomendado',
+  MASK = `Máscara`,
   PARTIAL = 'Parcial',
-  FORBIDDEN = 'Proibido',
-  CLOSED = 'Fechado',
+  RECOMMENDED = 'Recomendado',
+  REQUIRED = 'Obrigatório',
+  TOWEL = 'Toalha',
 }
