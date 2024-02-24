@@ -1,0 +1,37 @@
+.legend__container {
+  ul {
+    background-color: rgb(233, 233, 233);
+    border-radius: 4px;
+    padding: 2%;
+    margin-left: 2%;
+    width: 840px;
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+      div {
+        align-items: center;
+        display: flex;
+        div {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin: 0 6px;
+          p {
+            font-size: 14px;
+            font-weight: none;
+            margin: 0;
+          }
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+    }
+  }
+}
