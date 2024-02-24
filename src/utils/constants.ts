@@ -29,6 +29,7 @@ export enum Legend {
   CLOSED = 'Fechado',
   FORBIDDEN = 'Proibido',
   FOUNTAIN = 'Bebedouro',
+  FREE = 'Liberado',
   LOCKERROOM = 'Vestiários',
   MASK = `Máscara`,
   PARTIAL = 'Parcial',
