@@ -1,0 +1,61 @@
+<form
+  action=""
+  class="form__container align-items-center d-flex justify-content-center mt-1 p-3"
+>
+  <div
+    class="form__container-content align-items-start d-flex flex-column justify-content-center"
+  >
+    <div class="form__container-content-time align-items-center d-flex pb-3">
+      <img src="assets/icon-hour.png" alt="relogio" width="30" />
+      <p class="mb-0 mx-2">
+        {{ time }}
+      </p>
+    </div>
+
+    <ul class="d-flex flex-column">
+      <li>
+        <p>{{ period }}</p>
+      </li>
+      <li>
+        <div>
+          <input type="radio" name="morning" id="morning" />
+          <label for="morning">{{ morning }}</label>
+        </div>
+        <p>{{ morningPeriod }}</p>
+      </li>
+      <li>
+        <div>
+          <input type="radio" name="afternoon" id="afternoon" />
+          <label for="afternoon">{{ afternoon }}</label>
+        </div>
+        <p>{{ afternoonPeriod }}</p>
+      </li>
+      <li>
+        <div>
+          <input type="radio" name="night" id="night" />
+          <label for="night">{{ night }}</label>
+        </div>
+        <p>{{ nightPeriod }}</p>
+      </li>
+    </ul>
+
+    <div
+      class="form__container-content-checkbox align-items-center d-flex justify-content-between my-2"
+    >
+      <div>
+        <input type="checkbox" name="closed-units" id="closed-units" />
+        <label for="closed-units">{{ closed }}</label>
+      </div>
+      <p class="m-0">
+        {{ found }}
+      </p>
+    </div>
+
+    <div class="form__container-content-button-group">
+      <div class="align-items-center d-flex justify-content-center">
+        <button>{{ find }}</button>
+        <button class="btn btn-light">{{ clear }}</button>
+      </div>
+    </div>
+  </div>
+</form>
