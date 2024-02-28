@@ -18,21 +18,42 @@
       </li>
       <li>
         <div>
-          <input type="radio" name="morning" id="morning" />
+          <input
+            id="morning"
+            type="radio"
+            name="morning"
+            value="morning"
+            (change)="selectOption('morning')"
+            [(ngModel)]="option"
+          />
           <label for="morning">{{ morning }}</label>
         </div>
         <p>{{ morningPeriod }}</p>
       </li>
       <li>
         <div>
-          <input type="radio" name="afternoon" id="afternoon" />
+          <input
+            id="afternoon"
+            type="radio"
+            name="afternoon"
+            value="afternoon"
+            (change)="selectOption('afternoon')"
+            [(ngModel)]="option"
+          />
           <label for="afternoon">{{ afternoon }}</label>
         </div>
         <p>{{ afternoonPeriod }}</p>
       </li>
       <li>
         <div>
-          <input type="radio" name="night" id="night" />
+          <input
+            id="night"
+            type="radio"
+            name="night"
+            value="night"
+            (change)="selectOption('night')"
+            [(ngModel)]="option"
+          />
           <label for="night">{{ night }}</label>
         </div>
         <p>{{ nightPeriod }}</p>
@@ -43,7 +64,13 @@
       class="form__container-content-checkbox align-items-center d-flex justify-content-between my-2"
     >
       <div>
-        <input type="checkbox" name="closed-units" id="closed-units" />
+        <input
+          id="closed-units"
+          type="checkbox"
+          name="closed-units"
+          (change)="showClosedUnits(closedUnits)"
+          [(ngModel)]="closedUnits"
+        />
         <label for="closed-units">{{ closed }}</label>
       </div>
       <p class="m-0">
@@ -53,8 +80,8 @@
 
     <div class="form__container-content-button-group">
       <div class="align-items-center d-flex justify-content-center">
-        <button>{{ find }}</button>
-        <button class="btn btn-light">{{ clear }}</button>
+        <button (click)="getPeriod()">{{ find }}</button>
+        <button class="btn btn-light" (click)="clearData()">{{ clear }}</button>
       </div>
     </div>
   </div>

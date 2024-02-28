@@ -1,5 +1,10 @@
 <app-header></app-header>
 
-<app-form></app-form>
+<app-form
+  (dataUpdated)="showAvaiableUnits($event)"
+  (optionSelected)="updateOption($event)"
+  (isUnitClosed)="showClosedUnits($event)"
+  (isShowOptions)="hiddenOptions($event)"
+></app-form>
 
 <app-legend></app-legend>
